@@ -4,12 +4,12 @@ import axios from "axios";
 const  productsSlice = createSlice({
     name: 'products',
     initialState: null,
-    reducer: {
-        setProducts:(currentValue, action) => action.payload
+    reducers: {
+        setProducts:(currentValue, action) => action.payload,
     }
 });
 
-export const { setProducts } = productsSlice.actions
+export const { setProducts } = productsSlice.actions;
 
 export default productsSlice.reducer;
 
