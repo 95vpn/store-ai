@@ -24,7 +24,6 @@ const ProducstCard = ({ prod }) => {
                     <td>{prod.stock}</td>
                     <td>{prod.discount}</td>
                 </tbody>
-
             </table>
         </div>
     )
