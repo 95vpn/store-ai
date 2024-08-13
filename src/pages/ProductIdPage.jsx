@@ -1,9 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import ProducstCard from '../components/homePage/ProducstCard';
 import { getProductsThunk } from '../store/slices/products.slice';
+import './styles/productIdPage.css'
 
 const ProductIdPage = () => {
+
+  const [productName, setProductName] = useState('')
 
   const products = useSelector(store => store.products);
 
@@ -14,21 +17,16 @@ const ProductIdPage = () => {
     dispatch(getProductsThunk(url))
   }, []);
 
-  console.log(products)
+
 
   return (
     <div>
-      <h1>STORE</h1>
-      <section>
-        {
-          products?.map(prod => (
-            <ProducstCard
-              key={prod.id}
-              prod={prod}
-            />
-          ))
-        }
-      </section>
+      <ProducstCard
+        products={products}
+        productName={productName}
+        setProductName={setProductName}
+      />
+      
     </div>
   )
 }
