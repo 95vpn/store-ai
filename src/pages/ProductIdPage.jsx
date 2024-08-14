@@ -1,10 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import ProducstCard from '../components/homePage/ProducstCard';
+// import ProducstCard from '../components/homePage/ProducstCard';
 import { getProductsThunk } from '../store/slices/products.slice';
 import './styles/productIdPage.css'
+import ProducstCard from '../components/productIdPage/ProducstCard';
 
 const ProductIdPage = () => {
+
+  
 
   const [productName, setProductName] = useState('')
 
