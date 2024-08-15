@@ -1,3 +1,4 @@
-body {
+body.dark {
   background-color: brown;
+  color: bisque;
 }
