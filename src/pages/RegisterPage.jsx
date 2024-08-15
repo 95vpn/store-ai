@@ -10,8 +10,8 @@ const RegisterPage = () => {
 
 
   const submit = data => {
-    const url = ''
-    createUser(data);
+    const url = 'https://store-productos-database-production.up.railway.app/api/v1/users'
+    createUser(url, data);
     reset({
       address: "",
       email: "",
