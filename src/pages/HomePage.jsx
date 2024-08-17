@@ -1,10 +1,8 @@
-const body = document.querySelector('body');
+
 
 const HomePage = () => {
   
-  const handleDark = () => {
-    body.classList.toggle('dark')
-  }
+  
 
   return (
     <div>
