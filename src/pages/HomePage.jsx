@@ -6,7 +6,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <button onClick={handleDark}>Dark Mode</button>
+      <button >Dark Mode</button>
       <h1>STORE</h1>
     </div>
   )

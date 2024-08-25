@@ -10,7 +10,7 @@ const CartPage = () => {
 
   useEffect(() => {
     dispatch(getCartThunk())
-  }, [])
+  }, []);
   
 
   console.log(cart)
