@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCartThunk } from '../store/slices/cart.slice';
+import ProducstCard from '../components/productIdPage/ProducstCard';
 
 const CartPage = () => {
 
@@ -11,12 +12,13 @@ const CartPage = () => {
   useEffect(() => {
     dispatch(getCartThunk())
   }, []);
-  
 
   console.log(cart)
 
   return (
-    <div>CartPage</div>
+    <div>CartPage
+      <ProducstCard/>
+    </div>
   )
 }
 
